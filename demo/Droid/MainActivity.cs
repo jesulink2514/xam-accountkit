@@ -7,6 +7,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using AKAccountKit = AccountKit.AccountKit;
 
 namespace Naxam.AccountKit.Demo.Droid
 {
@@ -20,7 +21,11 @@ namespace Naxam.AccountKit.Demo.Droid
 
 			base.OnCreate(bundle);
 
+			AKAccountKit.Initialize(this);
+
 			global::Xamarin.Forms.Forms.Init(this, bundle);
+
+			Xamarin.Forms.DependencyService.Register<IAccountKitGetter, AccountKitGetter>();
 
 			LoadApplication(new App());
 		}

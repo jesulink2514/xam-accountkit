@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>AccountKitDemo</string>
+	<string>AccountKit Demo</string>
 	<key>CFBundleName</key>
-	<string>AccountKitDemo</string>
+	<string>AccountKit Demo</string>
 	<key>CFBundleIdentifier</key>
 	<string>net.naxam.accountkitdemo</string>
 	<key>CFBundleShortVersionString</key>
@@ -42,5 +42,18 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>FacebookAppID</key>
+	<string>2202506213306972</string>
+	<key>AccountKitClientToken</key>
+	<string>4dce1fa8b85d11eb1dd0680871236da0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>ak2202506213306972</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

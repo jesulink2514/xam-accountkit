@@ -4,6 +4,8 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using AKAccountKitAuth = AccountKit.AccountKitAuth;
+using AKTheme = AccountKit.AKFTheme;
 
 namespace Naxam.AccountKit.Demo.iOS
 {
@@ -14,9 +16,22 @@ namespace Naxam.AccountKit.Demo.iOS
 		{
 			global::Xamarin.Forms.Forms.Init();
 
+			Xamarin.Forms.DependencyService.Register<IAccountKitGetter, AccountKitGetter>();
+
 			LoadApplication(new App());
 
 			return base.FinishedLaunching(app, options);
+		}
+	}
+
+	public class AccountKitGetter : IAccountKitGetter
+	{
+		public Naxam.AccountKit.IAccountKitAuth AccountKitAuth
+		{
+			get
+			{
+				return new AKAccountKitAuth(AKTheme.DefaultTheme);
+			}
 		}
 	}
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:Naxam.AccountKit.Demo" 
+	x:Class="Naxam.AccountKit.Demo.MainPage">
+	<StackLayout
+		HorizontalOptions="Center"
+		VerticalOptions="Center"
+		Spacing="16"
+		>
+		<Label 
+			Text="AccountKit" 
+			TextColor="Green"
+			FontSize="36"
+			HorizontalOptions="Center"
+			/>
+		
+		<Picker 
+			x:Name="pkrLoginType"
+			SelectedIndex="0"
+			HorizontalOptions="CenterAndExpand">
+			<Picker.Items>
+	            <x:String>Phone</x:String> 
+	            <x:String>Email</x:String>
+	        </Picker.Items>
+		</Picker>
+
+		<Picker 
+			x:Name="pkrResponseType"
+			SelectedIndex="0"
+			HorizontalOptions="CenterAndExpand">
+			<Picker.Items>
+	            <x:String>Authorization Code</x:String> 
+	            <x:String>Access Token</x:String>
+	        </Picker.Items>
+		</Picker>
+		
+		<Button 
+			x:Name="btnLogin"
+			Text="Login with AccountKit"
+			HorizontalOptions="Center"
+			/>
+
+		<Label
+			x:Name="lblResult"
+			HorizontalOptions="Center"
+			Text="Click login to get token/code"
+			/>
+	</StackLayout>
+</ContentPage>
