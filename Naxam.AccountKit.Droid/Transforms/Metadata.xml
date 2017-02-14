@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+	<attr path="/api/package[@name='com.facebook.accountkit']" name="managedName">AccountKit</attr>
+	<attr path="/api/package[@name='com.facebook.accountkit.ui']" name="managedName">AccountKit.UI</attr>
+	<attr path="/api/package[@name='com.facebook.accountkit.internal']" name="managedName">AccountKit.Internal</attr>
+	
+	<attr path="/api/package[@name='com.facebook.accountkit.ui']/interface[@name='ContentController']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.facebook.accountkit.ui']/interface[@name='CustomLinkMovement.OnURLClickedListener']" name="visibility">public</attr>
+
+	<attr path="/api/package[@name='com.facebook.accountkit.ui']/class[@name='ViewStateFragment']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.facebook.accountkit.ui']/class[@name='LoginFragment']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.facebook.accountkit.ui']/class[@name='ContentFragment']" name="visibility">public</attr>
+
+	<attr path="/api/package[@name='com.facebook.accountkit.ui']/interface[@name='CountryCodeSpinner.OnSpinnerEventsListener']" name="visibility">public</attr>
+
+	<attr path="/api/package[@name='com.facebook.accountkit.internal']/class[@name='LoginModelImpl']" name="visibility">public</attr>
+
+	<remove-node path="/api/package[@name='com.facebook.accountkit.ui']/interface[@name='CountryCodeSpinner.OnSpinnerEventsListener']" />
+</metadata>
