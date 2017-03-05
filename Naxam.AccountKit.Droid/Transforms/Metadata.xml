@@ -23,4 +23,8 @@
 	<attr path="/api/package[@name='com.facebook.accountkit.internal']/class[@name='LoginModelImpl']" name="visibility">public</attr>
 
 	<remove-node path="/api/package[@name='com.facebook.accountkit.ui']/interface[@name='CountryCodeSpinner.OnSpinnerEventsListener']" />
+	<remove-node path="/api/package[@name='com.facebook.accountkit.ui']/class[@name='AccountKitActivity']/method[@name='onCreate' and count(parameter)=1 and parameter[1][@type='android.os.Bundle']]" />
+	<remove-node path="/api/package[@name='com.facebook.accountkit.ui']/class[@name='AccountKitActivity']/method[@name='onPause' and count(parameter)=0]"/>
+	<remove-node path="/api/package[@name='com.facebook.accountkit.ui']/class[@name='AccountKitActivity']/method[@name='onSaveInstanceState' and count(parameter)=1 and parameter[1][@type='android.os.Bundle']]" />
+	<remove-node path="/api/package[@name='com.facebook.accountkit.ui']/class[@name='AccountKitActivity']/method[@name='onViewReadyWithState' and count(parameter)=2 and parameter[1][@type='android.os.Bundle'] and parameter[2][@type='boolean']]" />
 </metadata>
